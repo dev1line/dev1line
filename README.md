@@ -1,5 +1,5 @@
 <h1 style="text-align:center">
-  Soloans Team Builder
+  Soloans Team Builder :hibiscus:
 </h1>
 
 <div style="text-align: center">
