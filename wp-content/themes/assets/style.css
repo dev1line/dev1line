@@ -1089,7 +1089,7 @@ main {
 .invitation-card img {
   max-width: 100%;
   width: 320px;
-  aspect-ratio: 4/5;
+  aspect-ratio: 2/3;
   object-fit: cover;
   padding: 8px;
   background-color: var(--text-white);
