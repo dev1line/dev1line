@@ -953,22 +953,22 @@
             </div>
 
             <div class="banner-date">
-              <div class="group-date">
-                <span class="day_name"> Thứ 2 </span>
+                <div class="group-date">
+                <span class="day_name" id="day_name"> Thứ 2 </span>
 
-                <span class="banner_date"> 30 </span>
+                <span class="banner_date" id="banner_date"> 30 </span>
 
-                <span class="banner_time"> 17:00 </span>
-              </div>
+                <span class="banner_time" id="banner_time"> 17:00 </span>
+                </div>
 
-              <span class="banner_month"> 06 </span>.
+                <span class="banner_month" id="banner_month"> 06 </span>.
 
               <span class="banner_year"> 2025 </span>
 
               <div class="group-add">
                 <p>Bữa cơm thân mật</p>
 
-                <span class="banner_location_adress">
+                <span class="banner_location_adress" id="banner_location_adress">
                   19 Nguyễn Nghiễm, Thị trấn Xuân An, Huyện Nghi Xuân, Tỉnh Hà
                   Tĩnh
                 </span>
@@ -983,6 +983,7 @@
               <a
                 href="https://maps.app.goo.gl/TSdRsRdMz8vRJ64c6"
                 target="_blank"
+                id="google_map_location"
               >
                 <i class="ri-map-2-line"> </i>
               </a>
@@ -1718,6 +1719,20 @@
             </a>
           </div>
 
+             <div class="swiper-slide">
+            <a
+              href="https://res.cloudinary.com/dh8l9y2c2/image/upload/v1750438118/Friend/466f925a-39fe-49ae-870d-89c459b811e0.png"
+              data-fancybox="gallery"
+            >
+              <img
+                data-src="https://res.cloudinary.com/dh8l9y2c2/image/upload/v1750438118/Friend/466f925a-39fe-49ae-870d-89c459b811e0.png"
+                alt=""
+                style="object-position: center"
+                class="lazyload"
+              />
+            </a>
+          </div>
+
           <div class="swiper-slide">
             <a
               href="https://res.cloudinary.com/dh8l9y2c2/image/upload/v1747065367/Wedding/sang_-_thao-671_ds6qec.jpg"
@@ -1773,6 +1788,8 @@
               />
             </a>
           </div>
+
+
         </div>
 
         <div class="swiper-pagination"></div>
@@ -2007,6 +2024,12 @@
       
       if(myParam2 === "trai") {
         document.getElementById("dresscode-groom").style.display = "block";
+        document.getElementById("day_name").innerHTML = "Chủ nhật";
+        document.getElementById("banner_date").innerHTML = "06";
+        document.getElementById("banner_time").innerHTML = "11:00";
+        document.getElementById("banner_month").innerHTML = "07";
+        document.getElementById("banner_location_adress").innerHTML = "Phú Kinh, Hải Phong, Hải Lăng, Quảng Trị";
+        document.getElementById("google_map_location").href = "https://maps.app.goo.gl/dJ1WrNk7KeNxRmNL9";
       } else {
         document.getElementById("dresscode-bride").style.display = "block";
       }
@@ -2015,262 +2038,267 @@
   {
     ten: "anhhoi",
     name: "vợ chồng anh Hội",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/488454845_3781240412022502_6337089841244711940_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFyFDM_nAd2nKo83WqeWwEZ1bKQWZFCXQjVspBZkUJdCOGo9MAMGVLhKbew18MvhybTSFUIwGC4cYaTHOXN54I4&_nc_ohc=SmZ1jgQI3jYQ7kNvwEsjTSV&_nc_oc=AdkTDOh5txsvYjWlQ9VQnOFzmOcF2HD_oggSdEpNoq7D39ojMyrNOGNkE-5Kn8NpYOI&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=OOSy9pFKBtmDIcjbtEIPig&oh=00_AfP5bC8hg9Bxk6CYzB9KOF0RNFPohZE4bS5cCOqMqVecyQ&oe=68530D80",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750435960/Friend/44145f9f-d46e-403a-a4ad-17e4659d6704.png",
   },
   {
     ten: "thangpham",
     name: "vợ chồng em Thắng Phạm",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/488081184_1199459338470551_8386587744643996900_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH_HO-AeolN7Iskg4_SfvzPhPKfAFQX_2SE8p8AVBf_ZC-8MtnTlCraNGDO73I8U_nefjk0lu44VK-9EPX3nJDX&_nc_ohc=btf0IgcNOMEQ7kNvwEk33Il&_nc_oc=AdlMq1cLD939-MmDd_1R1TLnT256Lkg2dYQSZhpEOwGEZBCDG6yquwLXZVYphttqGdE&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=jJlgHLQwlJvm1jHVfW7U5w&oh=00_AfPuzI59MnRPmu3uXPo8JDAYw1kzFrvydOdI3mMmV0nNng&oe=6852DC86",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436046/Friend/3ab3b90b-fd83-4f44-bebf-42ba36cc811a.png",
   },
   {
     ten: "dogiaolinh",
     name: "bạn Đỗ Giao Linh",
-    src: "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/321494481_855533058825782_1828367113602239546_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFF3y9b1YwwAkRSicYI33xX5a9AG8PvatPlr0Abw-9q03n2rRkcE5PeSlPiYcZuVw7MdyeBspB2bgI-3OJ7bCSG&_nc_ohc=EQ79clRl1wMQ7kNvwH2WHNx&_nc_oc=Adl-k5QzPezGjTP7qRXAq1Vx_xkpR3NEK3lcIGwdDJkRcEDeRCzRJl-DWq-JfJwtcRE&_nc_zt=24&_nc_ht=scontent.fhan5-11.fna&_nc_gid=BnA6inAs8ak1C7xfsmKrIA&oh=00_AfM1Gz5qeMF_wjhBlxe-q6ro64UTyTY1qrPqglDEw7SeoQ&oe=6852DDA7",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750435427/Friend/fe3ef92c-c6ff-4e50-ac97-74307f2a02f5.png",
   },
   {
     ten: "caoanhdung",
     name: "anh Cao Anh Dũng",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t1.6435-9/128784225_392270958782034_3139211238747405655_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHeBm8Mg3nqE6jilIuQXZ1-QkcWLfP5vMhCRxYt8_m8yO1RxyaFng9aBnSm-d95VMDtuc_uKWq-dMPRmaFvt0kB&_nc_ohc=Roy2yWHyUgIQ7kNvwHCK9Qh&_nc_oc=AdkxwF8zM0u9e3zRjXrs0hlQgmmkK54B3jjganOTcCMbF-VoSqBkpWosXnGhSEDf4s8&_nc_zt=23&_nc_ht=scontent.fhan5-6.fna&_nc_gid=9RHLPqI7-jlqCHsKiyy_ww&oh=00_AfOSDivvJGFY_Q227NUSKYmu2qLcVukwgsonuVdc8_ZpiQ&oe=6874A984",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750435745/Friend/35323df7-0018-4ba9-be48-0234ce582e82.png",
   },
   {
     ten: "phanhoangviet",
     name: "anh Phan Hoàng Việt",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/505180615_3217835641691785_173617669768136096_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=94e2a3&_nc_eui2=AeE0nJn7gjmbzQkGIM0nlWxSSbo3CRhNyAZJujcJGE3IBu6ln5ly9GonSkR9uDEAaYpv08rpTKm8U6CVkJ5yKuEJ&_nc_ohc=FTILtnGK8DYQ7kNvwH9imKQ&_nc_oc=Adn6JO9ZBmxwI453mPzin6STuETa6JCSWyZyT6NIK8GzSFgftlUyeGL9KEhnhELGr7s&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=ii22ZntE8KFBTB3P-ypDYg&oh=00_AfOuSEnJyvG6ATAPN7_2Npmjlbb9UgtyvEOJKteXejyDbw&oe=68530D71",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436131/Friend/f1a354ce-c338-43bd-be09-5d0ba8a7efa4.png",
   },
   {
     ten: "leminhduc",
     name: "anh Lê Minh Đức",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/465839170_8660358874079620_8169405300926028267_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHsOlEnRJ5Gqv6AfW1kvrti0kWEpWh7YY_SRYSlaHthj7SmcFg7ZjGEnl9AwloFMC07UqviU32bXYu0JQNQ4NZr&_nc_ohc=rWF_l2_wV-YQ7kNvwGpGnOP&_nc_oc=Adm-lii48J45SV1BHaJie25G2SYJnzTBFJgFQe_-9qWadjFu3eycpfSbDSMYftjIBHE&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=gai57AKlcQbe4c7CUlVcXw&oh=00_AfPJ8Ysz1Ur4jowro49uOTRIh1MDKLe_6xTMnK8T_gUI7g&oe=6852E5BC",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436170/Friend/7db131df-3256-4d4b-bf39-2ee027ae10fd.png",
   },
   {
     ten: "tvhongquan",
     name: "anh Trần Văn Hồng Quân",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/442417308_7596516797128908_2515942506210584368_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHu-Qhas8Lt9v9NNnSGH3_rEoGNcf0pe-4SgY1x_Sl77i44_cO_heBPukbpgRd7WTVuFNklk43yMF3g4W-q8ni3&_nc_ohc=gwyA5VK93nsQ7kNvwG6DEJ0&_nc_oc=Adk77qYukCL4FDY4L3bAEQo6_qdHqjIhIAP6SJoL-di1j3jfqMWKFpRJLfi4dEgIyC4&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=6UaYHktMa7ovawmP1w-0UQ&oh=00_AfNEEUe1so5IfPqjj4Wym-6qrxp4I-9gaAj54aU4KIFwtg&oe=6852DF63",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436201/Friend/9c865270-9817-44df-b45d-ce7f6dda0894.png",
   },
   {
     ten: "taquanghoang",
     name: "anh Tạ Quang Hoàng",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/327159541_1265715180711832_3538698232632360855_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFY1-Wc9yPl1TcUZYiayLDwuhf278wUU426F_bvzBRTjT0aGCfPpIKO55pF0VkgaFP_gljUXFPfAlh1KS1lwMZi&_nc_ohc=LexJ2tfRWOsQ7kNvwG-q4fu&_nc_oc=AdnU2OAydG6lZFYp9YSr4oc-dSemuGFg6wageIDPZURKw0WvQE2VQ3E1oDz26_ijGGs&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=hWvzj3rerDbOU35iCEpefg&oh=00_AfPl-SwUQdH1-KEVrDMgWGsEjBPKNR7VWGiugKFdFwmzbg&oe=6852F4C6",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436295/Friend/bf3b3703-796f-42a1-a346-3d676f0a111f.png",
   },
   {
     ten: "thuancao",
     name: "bạn Thuận",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-1/489853102_3917925405187854_3821883408216320923_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHDpvri8vN4GoUSBxvoTdkN9LhxG5HZ3AP0uHEbkdncA3M5DG2dBi8ueMAyRX7vm2ciIobwcS9KjFsa0J_9RvIX&_nc_ohc=CdTzONpUjYUQ7kNvwGhiS71&_nc_oc=Adkm5Z-vzUOcp7KWnRGE0npk-T3iXDuF9wv_KP6ih1UvL0n1gH379sNqnACmfPeZIZo&_nc_zt=24&_nc_ht=scontent.fhan5-2.fna&_nc_gid=WuhlACT-FudOgZFJ2mGEcA&oh=00_AfMVKyyxunjfQhXc9ke0aQjF7AuJLpajYvQkcg5igZKdTg&oe=685314AB",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436361/Friend/020d599b-5e48-446c-9504-5b92cc41bad4.png",
   },
   {
     ten: "maithevien",
     name: "em Mai Thế Viễn",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-1/355152523_2001602540186121_893402020538124974_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH6LonjJSGCWPzS3j0T4GQ10_T2MYBEHpTT9PYxgEQelL2LBujPxUoS_5Wn1v0__nzji_3JhrakyITX6W0K12VH&_nc_ohc=oPUYcT2a9gkQ7kNvwFIsnGu&_nc_oc=AdmPVRnsx3g1A06tteJgMEZJuubCEHtbM01t1T9t4CNLqYo321r4OV3wRmN6uveJJhM&_nc_zt=24&_nc_ht=scontent.fhan5-10.fna&_nc_gid=KWriBBWFSB9j6Q_bX6jcgQ&oh=00_AfNzVJl7O5ltZuypFUAom-FqQbHwcdHDuwCtN3OgtgXZig&oe=6852E335",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436335/Friend/febbf349-4217-45ed-ada2-2e05f13b10b6.png",
   },
   {
     ten: "xuanthuan",
     name: "em Lê Xuân Thuận",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/449077165_3464938273804441_7486247028011856606_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGx5M9g4BgK1GbiNd3plpR0TSmg1aBS0CxNKaDVoFLQLApQ6m_31m_K911BSnaVuIyAf9acajOAMo4ftl34tiA8&_nc_ohc=2S-sVHNjnW4Q7kNvwE3R2PT&_nc_oc=AdmXfZ8Ia-DiMkNfaC8zpXI9xqyBS2KC-YABZKfTSt5GYbkbs4FpgKKF2jZvxe10fgY&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=3DYPCj-sjLF2iFdJSZSkgg&oh=00_AfPNZqowbEp-E1TjpIgUz4g9TKxIvKLkmrOXBTipxffz3Q&oe=6853197C",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436462/Friend/947b72a2-2dc5-4890-b512-c26446bdc4a2.png",
   },
   {
     ten: "lehuulong",
     name: "em Lê Hữu Long",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/471628984_2344463519229172_5935812689687214288_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFRqmCn7NEl7mlAGRUb8SO7s47t8eZwLnazju3x5nAudgmO0t5e5396bDFXsERcP4kS50-4uExjba6ThFO6nI1h&_nc_ohc=JHbxha9_kcAQ7kNvwGCDb8d&_nc_oc=Adk1YHxqs6mFAMReNXvZ7gDRTr0SDtKUmHZFDGMiHtlK2HMnWwIypE69d0UheD8rOVE&_nc_zt=24&_nc_ht=scontent.fhan5-9.fna&_nc_gid=yHNL3AoZrpEobeXwOTlEog&oh=00_AfPGT-SMF7DdCTqIbP65hrDBu5unrxt2fta7WZgTjOY0iQ&oe=685306F8",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436499/Friend/72768151-9204-4eb6-aebc-67b84c04143f.png",
+  },
+  {
+    ten: "doantanty",
+    name: "em Đoàn Tân Tỵ",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437843/Friend/dd1f0c89-6668-4583-a1f5-44cb8c32fddb.png",
   },
   {
     ten: "huynhvanquan",
     name: "em Huỳnh Văn Quân",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t1.6435-9/56470359_761056174290444_1241361886323146752_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGAf4RW-A6AAIyTZCDKlO66GDRIrW_2HoIYNEitb_YegqGRRGrGTNi5h20v55cmxQ3hI4VAG0WWHlbdg2q9GrjL&_nc_ohc=8OphFbcSeVoQ7kNvwGeEk_w&_nc_oc=Adm4I-xCgCeRaigNVq2QaM_uCDhZYv5WedzmzwIM9GgeFf8NnclxzSQkpDEKHLeH-V4&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=iV2ZZzsXvWf-Qod3LgYi7A&oh=00_AfP2UKOPX1L7wUu-8RyXdbmJavJN7O97xHCPmUcpkGgC5w&oe=687486D8",
+    src: "hhttps://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436485/Friend/3457af48-09b3-4eec-9cfc-b3b02d98fc62.png",
   },
   {
     ten: "duyenho",
     name: "chị Duyên Hồ",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-1/476518309_4022011398118988_6524669541661142784_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFaQFv2KvxZLO0I1ktsteQqAnhsj5ILeQcCeGyPkgt5B7V57aCpcZCJO6Cgl6tSKllw0hXdO3IdD6m8BX_aO7Qy&_nc_ohc=eZfj-pjAcmAQ7kNvwHsSPSs&_nc_oc=AdlcdCp75RfjI2ltPOkgsOblqFr6tO_mmZuHyfsYYpoD6XhCkOZgm7_lK8M7I988S1g&_nc_zt=24&_nc_ht=scontent.fhan5-2.fna&_nc_gid=0zWXxRw0zxn_pCqQwdRmxA&oh=00_AfOwTvRYT6iwlqtWBxjGLHp4vv1e0k8khHeqHAqFUmAM0w&oe=6852DE2D",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436576/Friend/43785bab-b760-488e-adf3-2769b6cbbac9.png",
   },
   {
     ten: "trananhthu",
     name: "chị Trần Anh Thư",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/483527815_4004249876477657_722418981659061450_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHM0vEKtoFhpncl5Gm40Qw61iCxqXtnbO7WILGpe2ds7kXXRpbsw1ajOQevx3bXp27TUO7K4X_-BqpeyoCWwb7O&_nc_ohc=Wqx2FHwUY2cQ7kNvwH_xlYv&_nc_oc=AdkC1mO1ASZsNEBxCpCFxQeAPbVbYVzAspeyL1exmFhsbDV32GNWbjjDCo5Ym9Ntqdc&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=5GdoK_pIrVOIzAkHqcOQ-A&oh=00_AfOD0aMT6uFH9cnELJ3FXAk7NzW2WKmytrTm6t1DREfheg&oe=6852ED78",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436593/Friend/85b277d4-1a55-4a92-aba7-09956582198e.png",
   },
   {
     ten: "thuanvanh",
     name: "vợ chồng anh Thuận + chị Vân Anh",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t1.6435-9/87761383_1682799565193723_6906226881331200000_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHuh2JjhmcauggiP6YKAOrOIDME_64uEc8gMwT_ri4RzydPG4TQQxp5ZIFXugRM9c6NFCcqcxQdQF89ivMU49tn&_nc_ohc=vogZuOYTDiwQ7kNvwGE1wi2&_nc_oc=Adkv_u2k7WSYKuVTkvJ2l5PH_VSrhgTLS3Fq--Tx8MAu2dIpv_q98eZ3kMULOW5LqkM&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=6I1Aq-goxJLTjDzLmM2z0Q&oh=00_AfMf9AH7mmqWreCHg8oKFh0QyqG_1Q6lKPYjpKH7EmV1yQ&oe=687484C0",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436631/Friend/1620f3f2-1006-4731-bd61-e1553db27204.png",
   },
   {
     ten: "nguyendinhchau",
     name: "anh Nguyễn Đình Châu",
-    src: "https://scontent.fhan5-11.fna.fbcdn.net/v/t1.6435-9/107766603_3039103006139177_5772537885701503105_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFfry1AxLJzOre3akxRxhYR1ZxkCFAYwJ7VnGQIUBjAnt4sJZ0ImnJmQglsVlluXKQB1uAPVuDt17zUtgaRklJZ&_nc_ohc=NW0PjwmxX_wQ7kNvwEi4YQ0&_nc_oc=Adk_YBm1p0jwZtnvFiGI957tA0g8r3LR_rC3oHHesyUhfM_4cYL17flzcWch-Juj_dU&_nc_zt=23&_nc_ht=scontent.fhan5-11.fna&_nc_gid=-rNCZdq9kApjx9loPEwnMA&oh=00_AfO_hHUNQyhq55oRmbMJ7mzn95OtqkJ317VM84yw4akDsQ&oe=68748200",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436719/Friend/49c9b8ed-9860-499d-ac52-5e1921a12c85.png",
   },
   {
     ten: "duytan",
     name: "anh Duy Tân",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/472132788_2803748959833149_4481314957500219445_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEv5qgSvfVQu2yIK-V3TZyVKyq1-6MeMH0rKrX7ox4wfaOv0sJN9osYvsY10AydbDkc5hIMOCYXvJqG7JVqg6gB&_nc_ohc=HUKSWulP2PsQ7kNvwGRwSAw&_nc_oc=AdksDpvxStdQS1S0f6AjwzvHQtS2ST2tuZoKV2dej5lyFUIbfTq2V88Tyihm9WLRi9A&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=7RFyQHDDcwTPbmWn6ZhBjw&oh=00_AfNcWXE-9Qz0kODDVUaCvKLIDUGlnbl51v-jl1xh3q5bxg&oe=68530E1A",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436731/Friend/e5dee6a7-5eff-47f5-ba4c-b1998e0b7c19.png",
   },
   {
     ten: "lebahaidang",
     name: "bạn Lê Bảo Hải Đăng",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/487922753_2739678392884685_2833691996013662822_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFlkni37yXAXueeDp1IMb7ZA2RCx6l9SHwDZELHqX1IfPk_IHA_75fYwC-AeHAppPiJL3uI6651AopSOhVo5vpM&_nc_ohc=X5fhRQOGA8sQ7kNvwHe_Dyc&_nc_oc=Adlw5b0AHv4ItssJM9NnF67Hhx81cBFj-mqYIx-iByEVrWHbR6h0mbycLjiuojMLMVM&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=FZur52mY9wX3sQv6gZ8hmQ&oh=00_AfMTRKQlW8sbbfUlZxc36-XguEgRGAm3NUK-SHwHSUafrA&oe=685300D7",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436817/Friend/44be7e63-e589-4bc3-b7df-7961aa335130.png",
   },
   {
     ten: "minhchau",
     name: "em Minh Châu",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/415025520_2142097942818148_2950660957408832811_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeH2u9P9m_z0RxCl_U6v1BenzuXy5AovJGLO5fLkCi8kYoaExH5XqN_LmuN_TecT9F9C3iIEwTN9IHt6imWhjQoc&_nc_ohc=__zQBr2-IGgQ7kNvwEDM8wa&_nc_oc=AdlKlv2Rtezxp-2O0EmpkEhjspo0UJPm4FVEzva_fD8D_Pk3s_BAlIQ1Kzvi7RgPSG8&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=TWynFMpQ2K98BAmg3iTKKA&oh=00_AfOE6UxF9Tn5APwDEoLg5fXHBOp9pyDQz_-NxjhPwPBxcg&oe=68530212",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437146/Friend/09e47926-dc59-4c42-8b01-fbda097895ef.png",
   },
   {
     ten: "huynhthiailinh",
     name: "em Huỳnh Thị Ái Linh",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/492196727_2424096584616444_2449611444410676169_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEbfbgH4qo3IhATnqexz67xOKdzYDPJOGo4p3NgM8k4atmfavs6IjYdcK6x8Ol-fagwCsuZ6rXkaSG_MOXDgpE5&_nc_ohc=QleA6G692KEQ7kNvwF-0jhJ&_nc_oc=Adldc3oHmzd_J5AlrNqtpzu5DTogdTeW9OkeQxhOV4dYNLsJG-87q13yBkIiXoc3NDQ&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=elaZFGN1odbpaxgHZxa-oQ&oh=00_AfN2vBpdymP7i_AMWQMGu9gB_bDB6eLSW9Luo3wK9yNrJw&oe=68530061",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437151/Friend/92dd1cd7-b408-48e1-904a-94b7a02be6a5.png",
   },
   {
     ten: "huynhthikhanhlinh",
     name: "em Huỳnh Thị Khánh Linh",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/497520900_4108414772817405_5955335683816863229_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFVSVZmWrQalFCXrz_KPJ1bm0jda-wVITCbSN1r7BUhMG5oaAJMQfi1mNMj4YsJhhJwWNUM8ZF-2Czykiw0PyP7&_nc_ohc=WEphS_E-cxQQ7kNvwHqIegJ&_nc_oc=AdlFEOauo6TCtNII7oV5RM8yG8XqW7C4g-65Ab9cbL31x77v_rTKqU9ErQEyFiem5uM&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=rUU4OsEsBaz055M1VknkQQ&oh=00_AfNWSIXebld94GSL4IQg3bakMCg8ZdhUcVATgTYX43ppVg&oe=68530D6E",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437234/Friend/1d241409-8dc1-4691-844c-edbde8ada166.png",
   },
   {
     ten: "nguyenphamtruonggiang",
     name: "anh Nguyễn Phạm Trường Giang",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t1.6435-9/58579443_2260139807375544_8345420141038665728_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH0JRutxm69CRpmGqlc-uf4fxUolIC_g1B_FSiUgL-DUPy-ayxdyKxJLh-LmyoR6IbODiup4o2TU2R_L0H5k64t&_nc_ohc=H22gsEn0HV4Q7kNvwG9z2ms&_nc_oc=Adm8188EKQXls15ouiNlHGHbaKKCWHBlFBhACIk1nlRE-ltk1Ew_rlWIEUZKpucUGfQ&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_gid=eC7jGniAnPC1LT-s5egl9Q&oh=00_AfMtkKHSPVc5T2FwCGIjuji0Piw5Q3tP1QvRuXbKriyBQQ&oe=68748989",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437231/Friend/2052d7d7-014f-4c4c-980b-03e90b9645e6.png",
   },
   {
     ten: "nguyenhuunghia",
     name: "anh Nguyễn Hữu Nghĩa",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/435082542_2565570846942748_1588569264710565480_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGkZAcTjOYuhu2pOd7e-a2JXyT6k6uxVQ5fJPqTq7FVDsCXYUnnpb2vXJfPy3_NHUWnLnlJTu_WJ804FRwEv7tx&_nc_ohc=_mz72oWB6EQQ7kNvwEBGhku&_nc_oc=Adn5NqwQrc8KWu3Y2QJdMMqrVfpcrr7z5jI8GNqwWW4KAruQrQkZJoed-ojCCJ5ppsQ&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=Mc3ocLRKBE31Q2Im32nDsw&oh=00_AfMblstGKZMKKyJltweczwgpfIY3BTh3m0c5hxpLi8qJtg&oe=6852ED6B",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437366/Friend/f3f3fd12-e356-4bbd-b17a-8cd16bb0e929.png",
   },
   {
     ten: "phantranhung",
     name: "bạn Phan Trần Hùng",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/497759472_3965743660335316_785304927650709593_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFmP0_ULtXKkk2mobvXXduoq_xMMli3GuSr_EwyWLca5EFDDt4R2qJiay1qy3r9tVUAcEo2u3omEir1bUoMqX90&_nc_ohc=SzvzvlonLNYQ7kNvwHlv-WA&_nc_oc=AdnY1wcEnM-cHfD95jMRK8psTd1GpSXudc63J9GkFn17ShUr3FbMFPKGBml_U2LkygU&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=s0aH5icIKU6XJztrO3kZQg&oh=00_AfOdt7Fspc--JnSwtWljKceOhwXjOCfifNokEY6FupR32w&oe=6852F559",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437371/Friend/9e9b062b-10ee-4a44-b8d4-65ab3b9725a7.png",
   },
   {
     ten: "hominhhoang",
     name: "anh Hồ Minh Hoàng",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/381513192_1800626687053445_6994022002256105901_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHN9V4nImnaildgPKhtK1JjAfxsCfv1NLcB_GwJ-_U0tzp3MpMdlueOGh_ftikD8XN9XPrlCSBAQYvuytQejB4v&_nc_ohc=r5zZq9_CY1YQ7kNvwHS0iT0&_nc_oc=Adn1Xq5z5uKX1lGoJhS0Te9qlyc_UD9M0PmgyS8FLR4qzG_tMnSwpQZxto4-cBfnY6k&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=Qiic1Cpkqi6CzpL_p-lHgA&oh=00_AfOv46rRtNp4mg2A0eylbXZNWCfJY9Sf-_oPNnatkUzXdA&oe=685302E7",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437398/Friend/ffeb5f58-5149-41ff-946b-14798e551594.png",
   },
   {
     ten: "nhuquyen",
     name: "bạn Như Quyên",
-    src: "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/465723590_3884688505131050_5668678950930203947_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFBEGQrk8uAgVg2dSy8L0xbO1zOYK8ztz87XM5grzO3P7v73WHGCwJ_QOwTlXovxuZ4Q7niEahOyfM_TLE25k4c&_nc_ohc=m3itpmddHGQQ7kNvwEZj8Qd&_nc_oc=AdlucD4EmOatWeW6F3VZAnbNWyEnjVtRqCtOVlvC6MEKlpu_gZmc65C3LbM3kVBHutA&_nc_zt=24&_nc_ht=scontent.fhan5-11.fna&_nc_gid=c6fWTBvMQ8fDIbEtOoHPUQ&oh=00_AfP9AJjNwq-r0xQxZWsUvUw8v-7iEdbSqZXGe_A8EVbZig&oe=6853126D",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437427/Friend/496024c1-6dcd-4c64-ad52-ae24ce212fe8.png",
   },
   {
     ten: "maivanthanh",
     name: "bạn Mai Văn Thành",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t1.6435-9/166668827_2825917804338779_5780506673054478598_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEYt5HrpEHI0MGXLe4O2BLpei6N0b4r2tp6Lo3Rviva2m1d3pnB3sXYQMweFNr6TUEn-JoiQEipaWIRTOIdQoku&_nc_ohc=s9ZLGtyqkswQ7kNvwEOt8w3&_nc_oc=AdlUR3jSPmKOClf0L9J4JSa74HeKU9N0EuN6e8lh5XQesrUM0XBM5roW_xq5rJFvizY&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=dj9FW8QI7O8ltrRWxosOuQ&oh=00_AfOjUXSroXlQ9ETimTMxBjGdrFBws_cGU0HbMuVBnNB1Eg&oe=68749AA5",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437515/Friend/5e4ce94d-23e2-4e9f-9b1c-84593cc41695.png",
   },
   {
     ten: "lexuanphuc",
     name: "bạn Lê Xuân Phúc",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-1/474176723_1862280447638334_8791687250001207476_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeEjOu_2acw4lu0YD15NCxydrXprKHL_b2Ctemsocv9vYPWHuPceECbd54WzVsAnvksyvcLX1mnqcOksR2BlVNn4&_nc_ohc=_YL1D4RR1-AQ7kNvwHUFpoH&_nc_oc=AdnO8oCIL3XAzFzrJ35-dGm8-vr253BRLK9v0bf1aYk0lVdi7UObTNNdj4PXQxfaaoE&_nc_zt=24&_nc_ht=scontent.fhan5-8.fna&_nc_gid=lmTYTwbjNLLlrj91s1TkHA&oh=00_AfO9PGXeCib_nTF5EVBuSogb64e4NZheF4Ob7iboSh1z6g&oe=6852EAC3",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436827/Friend/6e09565f-8e14-432a-9711-d91e56871538.png",
   },
   {
     ten: "hoangtrinhanhthai",
     name: "bạn Hoàng Trịnh Anh Thái",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/464981174_3900213763544192_6516965841480826317_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFpU7sBRV-corWKGg1Vg0za1wa4f5C2LiXXBrh_kLYuJTgxG39q2X7cK-DNFyuexDGsAFgl0_83k_FBJ5N2ZNNI&_nc_ohc=NMCNVzrBeqQQ7kNvwGOK5Xo&_nc_oc=AdlcTxyiGTR8vCohXfhAF_Tsp2TT08dUNKjcM0wqK6hMs02G13Okw9TYBM-EiOC5Czk&_nc_zt=24&_nc_ht=scontent.fhan5-9.fna&_nc_gid=eFfsK2flJ3VZYgYfNn7-FA&oh=00_AfNG9urUEA6wZ7uT8ifL32ttEfDPRW5Pgqw6caEkfiSa9g&oe=68530D40",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437039/Friend/451857b4-5179-4248-be16-4f237c5a80d0.png",
   },
   {
     ten: "ducminh",
     name: "bạn Đức Minh",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/475320186_3097286197092215_1465052899930537195_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeECWxSjrg4GppnBhd_JKLehbpQCfqtX3lJulAJ-q1feUpMGdaif74lZuBnScctssTfFaOzmiVIgsdF47LU55KQO&_nc_ohc=q9TLczglWuwQ7kNvwH79SDt&_nc_oc=Adk3EongcCpRHVAO5yC5aJM5YzEGckg7HjP-Vbp_Cmi8hN7a0RqD5r04jO6N9XR25i0&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=SxtqJ5nUuO-8k6OeagYwmg&oh=00_AfNK1WHj9mwwb61OAgBugnFlkobvOBk-wOExsA-DRRWN_w&oe=685303EB",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437065/Friend/bc156a97-f3d7-4c68-8aea-1e087597c26f.png",
   },
   {
     ten: "anhtai",
     name: "bạn Anh Tài",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/471919292_4052899568262218_8942138879364877683_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEEnthae9Tm1RVy8bF2Mjl1FZs48QPLa3wVmzjxA8trfDU7-3JxmgWCjSSsQYwDKhp30XXyolXMm3EpneBwijz0&_nc_ohc=FJ_dwjN_6voQ7kNvwH-OzZf&_nc_oc=Adlm3Z13r58kOR46qJPYwCibJSVM5Trx6GHfVJ4u3IY3YkV_WMFWlJSTBzpttqfGVHM&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=inV1LGB_tCyAoKPAidaTKg&oh=00_AfNvbYUnzVnqPlLlk8qdXmqqj0Wa2vjikE75gOWy1kaQMg&oe=68530108",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437593/Friend/a7fc3449-4016-4f87-bf5f-0af446f677db.png",
   },
   {
     ten: "minhthoang",
     name: "bạn Minh Thoáng",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/485031573_3957100054513328_430519112779820725_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGcoIrgNiC9RYF9WDpHG54RQo9h85C-H81Cj2HzkL4fzZ98pONw5syF3S36JqE3ydrnlyEPmkU_2GSxieiujXAy&_nc_ohc=4gN9RyWMN9UQ7kNvwH-3J4I&_nc_oc=AdkBSECp7TdsM6A2MeGvSGYzWiCLmOVeHiYTf8EmowHDaLtbs-Q2ua9ACTB5vCd_Pdc&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=OhC05v1z_qfXdY65SNJMcg&oh=00_AfPBNJXpDE66gnAwEUPyEZqwdv3hBS5ETrwDjC40syynwA&oe=6853159E",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437604/Friend/68494547-eaa2-47a0-ae0f-55a0b2b83234.png",
   },
   {
     ten: "thanhphuong",
     name: "bạn Thanh Phương",
-    src: "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/428627191_3685939598319070_7160926991291093102_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHx0E8XgTl75-lQowrHKYpAEezPSY91w8MR7M9Jj3XDw-CeFZyj1n92dhXICHEl7NV0OtTMD5MF7ATl-iPbjl61&_nc_ohc=IHeLFpxSjg0Q7kNvwEKNnM-&_nc_oc=Adki_05EbC3vQEjQ2Hyhfnk2Se6CFb-IKrqpKFM9Up9PR0I2yvBcqa9hzA4MGgp53Vs&_nc_zt=23&_nc_ht=scontent.fhan5-11.fna&_nc_gid=qY9Ks4zKbPFeeAvyFi4lvw&oh=00_AfPf-eFagHAMEsdjNcWurDd5ERBq4Gi_cijHOLAEWRFS0A&oe=68530580",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437712/Friend/848c91e5-b3bb-46fb-926c-fb75d786c28b.png",
   },
   {
     ten: "thanhnhi",
     name: "bạn Thanh Nhi",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/333975716_5749909345135256_7212329893325341318_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGHLXCKzWwQ5fmPuXfLGIllbWI86i5G3tFtYjzqLkbe0QA5ISbln5O0r80PsC7NT6D29sSbTIGEiRT1eK7SOF0h&_nc_ohc=3lGKPFUPsHEQ7kNvwEkgQp7&_nc_oc=Adk9hOboWO60Osw9ZPCdZSSXBbhNuZ8V9XbomZcosaPcGf_5Zs2m0FoAQydjSX7XxRU&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_gid=pjs95ncUstNhvO97E-hN1Q&oh=00_AfOBIdsO8Vz5bmBOmTf9kol0zib9i3u-AybRtN--RT2nYg&oe=6853097E",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437731/Friend/75f82d62-f195-45cf-9fb0-fe3cc36ca3f5.png",
   },
   {
     ten: "phuongnhung",
     name: "bạn Phương Nhung",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t1.6435-9/194836094_2931997230460797_1471851495428462328_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHHakcXVg9yU7pl1G2X790FzLAal0lQFQXMsBqXSVAVBXXpCA_7PaaQj0KH-AKEwtVhQ2Lj9tTUtcmRVcnl7cp6&_nc_ohc=EpLqBQ8MtuMQ7kNvwH_p8la&_nc_oc=AdlaCFA2viPlB_9_SOaB3oLz0aixuQhMa9LmYC1tiB_WbhUQ1NYQ0tP5hIBJn5GUPCA&_nc_zt=23&_nc_ht=scontent.fhan5-10.fna&_nc_gid=gpK51fpq5R0PGwSNkBZcfg&oh=00_AfP0RShahH9Nz1gb2kBAmZAqFtJ04P5Z7vofl1RHRDmBGg&oe=6874AC35",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437906/Friend/43a597be-2e41-4cb5-9320-6dbe07fb055f.png",
   },
   {
     ten: "quangduong",
     name: "bạn Quang Dương",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-1/480979718_3989261847978008_4584025970713534265_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHCXa8Qw7HQ_vEt9zVDJyWJnE-m-9pxObGcT6b72nE5sVSMDqkCVNOxvi7q4ZJ2H8AtpqObN2lUTsKw6y2IxIys&_nc_ohc=MYN5YMMAJeQQ7kNvwHM5kY-&_nc_oc=Adlp2PWNIA2ZP_wvzYwMzBzuKgfOa0OmFfOi_Fm9q8Q4fT2lUw5l9MCU9bPhj5kNqHU&_nc_zt=24&_nc_ht=scontent.fhan5-10.fna&_nc_gid=qYLcdq8FornY8y9YAzPCRw&oh=00_AfMBtpT2mWEw1HSh_uudR0eYUoWOxabUw6Mu9p9DXtg06w&oe=68530135",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437927/Friend/86cf9611-818f-4706-a66c-e77144fe9c24.png",
   },
   {
     ten: "ngochai",
     name: "bạn Ngọc Hải",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-1/488908974_3979677028936179_1374439120905274809_n.jpg?stp=c0.0.721.721a_dst-jpg_s480x480_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFYcQqYzSBp3634G6qTti6UBM9eDL_T6LIEz14Mv9PossVwjvWcmgevdeDZLnrLk2h1rbN47X1Qbl3ZQrcxEC3G&_nc_ohc=SBEMUjnk6lUQ7kNvwEwFMRY&_nc_oc=AdnoJO4ZsiR8TTUVJQdDYUKkQ-nD50wTQvYOh91q9opfkIrKv0vOuRtHKtkkUf63L64&_nc_zt=24&_nc_ht=scontent.fhan5-6.fna&_nc_gid=UkjElM3otcP5dLY8nqY6mg&oh=00_AfM30wP2edOFzIvX002bVQIfcMUb9Q_xjH6yMMHVrbIGAg&oe=68530CB3",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750437992/Friend/cbe78eff-2e11-41c1-a435-0771c27277d3.png",
   },
   {
     ten: "xuanloc",
     name: "bạn Xuân Lộc",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/427425330_3901235180105404_8300678713040429229_n.jpg?stp=c0.0.1161.1161a_dst-jpg_s480x480_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGHlolPxAbjnYt_rcXfrG731jkEJGf98yzWOQQkZ_3zLJNZ6ik4EfO38KvjU6BT4GhTsQafmJvcGZni1c7M4tnG&_nc_ohc=urRU881I5tQQ7kNvwH-Fx4y&_nc_oc=AdlqlGIE7QnEKFaH6Sgfk55q9vBOD2_8Xg6_GgcjbQLBmoDO19b-lX3KiMFteweVf1Y&_nc_zt=24&_nc_ht=scontent.fhan5-9.fna&_nc_gid=OCfYa3678enFQfF_-f2CkA&oh=00_AfN7jhKE2795OzGDiSp5nAqYaK5ktSoT0P7SA42JOm3w2Q&oe=68531563",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438445/Friend/0cca8525-37bd-489e-af74-a812bcd90fa3.png",
   },
   {
     ten: "nguyenthuylinh",
     name: "bạn Nguyễn Thuỳ Linh",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/364752092_3360362850942051_67616940873575270_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHTIZItJlQ0W8kRWOTs-ivGo-kjrLN0t7uj6SOss3S3u-VN6vD1NM257dV8I8G6GX3-PqvhWLpeVIacQbkiINFz&_nc_ohc=et2g3dHoVSsQ7kNvwFqnk3a&_nc_oc=Adklh70WnColkz1mjfi1vgXym1nuRf7Z9EHY4uM3tCixpqzfnSBgTJ2pi9iGBCkDX0Q&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_gid=76qcZjJikFk2_M1AqLJ_Ag&oh=00_AfNCq_pRSnAdjdNEKJNpsQHJSUe3bnGzrItdK--cvMytbg&oe=68530BF1",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438465/Friend/816a84ce-5eb0-4a10-88e3-187f4e27c7f7.png",
   },
   {
     ten: "minhmanh",
     name: "bạn Hoàng Minh Mãnh",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-1/500483323_713277981061970_1643788494624697108_n.jpg?stp=c0.402.1233.1233a_dst-jpg_s320x320_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHvw5KbKJVox2V-dIW4YUHrV9ZvjHaIpfZX1m+Mdoil9uRhF8SmqcKRaXF0QzFSnj-E8lNX-ByPddot-BxBTe7V&_nc_ohc=9vxHphFCiXoQ7kNvwGvZJ5C&_nc_oc=AdleTe6nmtzekmzHQE-4Ydc4Jr0Etm72vyI64yV1tPp3HE0fuoOI3DqlcQ7FdokfCCw&_nc_zt=24&_nc_ht=scontent.fhan5-8.fna&_nc_gid=X7_wGJ1atCwSJqPH5hGxvw&oh=00_AfONQoMyxSS3kJlcAkRZhoHVbd7qNgfz3cJz-gC7wvSatw&oe=68531B31",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438511/Friend/5f5aa39f-4385-4e91-b38d-3153a1fa5463.png",
   },
   {
     ten: "khanhhuyen",
     name: "bạn Khánh Huyền",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-1/486090873_4105728716330481_8722608750318263537_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGPmDV8vVdRHNq9-4deyqnrQezDHqL1SMhB7MMeovVIyMOLBFhwRWkLRIegCwdc0o_LwiHA1cvHWW9US7HWnSMJ&_nc_ohc=r90fETUM6eAQ7kNvwGHCL8C&_nc_oc=AdmbNxskFL9rhxPiFWOl8KNI1sZxOU8_xay-y9XIQ_TriWu6Af6mAszQHCjWvL5SD58&_nc_zt=24&_nc_ht=scontent.fhan5-2.fna&_nc_gid=Q8WqTEBFlbCFYzBPfue4mg&oh=00_AfO-XeEFt05-HMl6GGbDELIajwQ7BdUoIsf4AosTCOPI_Q&oe=6852E92F",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438514/Friend/c2db5c43-16ac-4845-9a9f-4487d85159a2.png",
   },
   {
     ten: "khanhhang",
     name: "bạn Khánh Hằng",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/492772383_3060298817472734_49192781436296886_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHGSnJ2GioG3MZfsv8e4D4CPTxFYHwKv1Q9PEVgfAq/VE6VJssNPAgZk8NGiMYbomrTbc_dfU59GoDEVu-BfD2r&_nc_ohc=GyFJFHppB8YQ7kNvwGRD9Ba&_nc_oc=AdmtcyXrmCoeQxqSJS8O7Mm-ZMUL9_ClIlctZezFrLH41s7kqYStwkfZKCB_2otxm3Q&_nc_zt=23&_nc_ht=scontent.fhan5-6.fna&_nc_gid=SbnUz7gY-hA7k5ZFU7kimA&oh=00_AfOQVaiiqGcokCEvVbHd1pt0U_Zcsamzq9RHFQyT8I3EzA&oe=6853028D",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438608/Friend/37c26467-c0cb-4f4a-af73-8ece17828cde.png",
   },
   {
     ten: "tuananh",
     name: "bạn Nguyễn Văn Tuấn Anh",
-    src: "https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/276994531_1438595543226273_940018749299236004_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEYVdKmZ7EnHt5yXxW_B56n_bW2j7iinZD9tbaPuKKdkIWf5oS9swwc-qVoAyQ4SwkSZEr-RPndtIz4RBNJj4SV&_nc_ohc=mRRTByKT0NgQ7kNvwFLxA0a&_nc_oc=Adm1Gf-0QUPLOzGgMtsEPFUFNOUR8kkxhGyIVfPGlfS55jtMA2sCbA_RqJn6AqCVt_Q&_nc_zt=23&_nc_ht=scontent.fhan5-2.fna&_nc_gid=uOufcZfT8476jsBQSO43LA&oh=00_AfOhuJgOqNzN-4fw4cETqYSxjBBZnbIR-vIbqRFUd6PNxw&oe=68531823",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438627/Friend/71dff829-ec93-4718-b7ec-83feb09a5ea1.png",
   },
   {
     ten: "hongtham",
     name: "bạn Hồng Thắm",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/475994656_1138773337921846_6963826127086719927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFDz6ntJq8NAYmBq_Jg-g7q0IQL8q-JaTPQhAvyr4lpMxneOl4DJubgOkfyrX5REM8-sye9sKadOcmJbSdDZS-2&_nc_ohc=sBY09eDIcv0Q7kNvwH7pnpW&_nc_oc=Adl9bri2AObx-YKEnL3oB9TmYezlBOWAAbCR_tkq2b6W0FM6Ix-ycnJDv7qPlmJtD_M&_nc_zt=23&_nc_ht=scontent.fhan5-6.fna&_nc_gid=HxilQyUfzmqwea2A089O1A&oh=00_AfPWu5XfaWTMyQpxA_sgFHCTR6TLYyauImPNgV7xXLXCHQ&oe=6852ED82",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438631/Friend/551b1378-763c-475d-b5b4-12538a81b1aa.png",
   },
   {
     ten: "anhkinh",
     name: "bạn Anh Kinh",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t1.6435-9/120126842_2709464165988516_3072122020213493619_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEENkcaqMys9pH6UhdDBp4EKTo-EV49eRcpOj4RXj15Fxbizj5imdiSCmmhbWj5v-DzP_i5U-qnMQJlpv3gW2D-&_nc_ohc=9lCKgL_Xr88Q7kNvwEb6SRi&_nc_oc=AdmnaCNBSKwC6bMK-ibs8qxlCt3M492alaA0jt4nMUchmL51nwuAYgFxjEwcL68UZnM&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=AHiO_NFiT_EV_FZST_Y7pA&oh=00_AfO029CHkk46iRV8J0i0uikPs0iyt0kudHHfwADwoQKY7g&oe=6874A28E",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438705/Friend/3c3d9076-9811-4e3a-9f26-eb55d46ed6b3.png",
   },
   {
     ten: "thienchi",
     name: "bạn Thiện Chí",
-    src: "https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/340302614_731675558685025_2652130546797402544_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGewgMi0gHMTACXG8s2iVK4LRpMOo6sH8QtGkw6jqwfxPBrCqzmwGOyTSGynhMHOVaINtPdvETnN_DxIVnrPO47&_nc_ohc=U9lIVv29oUgQ7kNvwG8G7NI&_nc_oc=AdmgA8Htn6Zm26f_a-bQfYAttACkZ_bmXtwzsNqGzeaOuKEU5QqoRZ98pndIl_14o3s&_nc_zt=23&_nc_ht=scontent.fhan5-6.fna&_nc_gid=xkqI2H5jSMnCwq2rQGeH8w&oh=00_AfM3Auot9to_3HuEjolxtjcaqufNAtLz7Wj0J4zzpH7sFQ&oe=68531C03",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438780/dfe7d4c5-ff8f-45ef-b883-a5393986ad59.png",
   },
   {
     ten: "thanhtin",
     name: "bạn Thanh Tín",
-    src: "https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-1/466575161_3997107977188650_3643751784719249794_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH1ZcyxFctnKfQZcxALGAZvdVbJLNszjIl1Vsks2zOMifMv6zHtXrIRe6gouUkQKxIxlZeBZQNn-_9MIFkFM0hR&_nc_ohc=zx_10n-Q2-4Q7kNvwHId7jF&_nc_oc=Adli3CNjh60d6xX9zUjfscM6iI6__p-4w2uHf_yG0zgoR9MYTsj4hFb_KnCluQXyEi4&_nc_zt=24&_nc_ht=scontent.fhan5-9.fna&_nc_gid=gxAm2oKiFjsPk4YHo6EPvg&oh=00_AfPi4MoeXRq2iM2alMkJFQWDKvscU1xaIOwHt8aEfwkg_A&oe=6852F0DE",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438731/Friend/36bcb05c-3a59-4c91-a4bb-e869a833131b.png",
   },
   {
     ten: "quanghuy",
     name: "bạn Quang Huy",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-1/463584785_2750519745130860_2490971667318929282_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeECfNy2_CLUmTSNfcpqJ1HkNdqFFqOD1cM12oUWo4PVw0NkHf0BATbO9ZhUaHzhYK0_Yyx5sQExIGX-jUaPOTZf&_nc_ohc=1dEboBRwNCgQ7kNvwFqezor&_nc_oc=Adnyu5kKHKA6kGuOm1U1GFVgKWkWfaurm4oKDJBl7OGXBLsi2ZXptoksvqM_dA9JprU&_nc_zt=24&_nc_ht=scontent.fhan5-8.fna&_nc_gid=OpDy8Q7HP8C1XINOE19qTA&oh=00_AfNDYqnxbWA3JzKWXX_yWLVdiJGwbjizpZOdq5-g8lcKgQ&oe=68531680",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438785/018dbc28-72c0-4f45-bbec-70f32974adc2.png",
   },
   {
     ten: "lamhau",
     name: "bạn Lê Thị Lâm Hậu",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-1/328638386_541640154428064_2587057830649941491_n.jpg?stp=c0.0.721.721a_dst-jpg_s200x200_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHVIXYqGKI55z_Wv7M_uXFuybYyRLLt74rJtjJEsu3vihFnWh6qnljwBJcoY5dzJjXFw4KDN_UXMy0000XuoVfx&_nc_ohc=Rnl8Ll3U8rYQ7kNvwHEwORh&_nc_oc=AdksypPGeaSZ1Td01YJ5697mvJIRTpbSur0y8Jju8pMq873hDDVcaPXsiTeClJkKolc&_nc_zt=24&_nc_ht=scontent.fhan5-8.fna&_nc_gid=99Q0sgsgEKJnnWg8_bp0lQ&oh=00_AfNrqnh6y3AtWF-qlyV6rKOK4IX61K4A598TNj7bbfjtMQ&oe=6853154E",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438892/4e10d9a8-517f-4633-ae7d-0314b9b89231.png",
   },
   {
     ten: "huyenvu",
     name: "Chị Huyền Vũ",
-    src: "https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-1/394616793_7457238060960041_5819307425152415317_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHigsEXC35PQ_S5rF5uMEy2nVy1qwNchDmdXLWrA1yEOfwlDSv3WiJX6RCzBao1UqWRCRnDb3k74hZIORQDtUgh&_nc_ohc=vby-olndh6MQ7kNvwF45H5r&_nc_oc=AdmN__3vGC29xrtQ1-mIguxrWpNRgdYG_lsELRfw8K1Ru4Fh8NbTjo0JDnyUVawBuz0&_nc_zt=24&_nc_ht=scontent.fhan5-10.fna&_nc_gid=q2FiFQsfXSIxNUJwogZSxg&oh=00_AfOfHk1IFS3OnNb1aZdTx5PpPyYOGh4DITzoSbKqRfEU8Q&oe=6852F87B",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438895/0f1a8e01-a0bc-4d66-bfc2-f369cfbcd261.png",
   },
   {
     ten: "dotientung",
     name: "Anh Đỗ Tiến Tùng",
-    src: "https://scontent.fhan5-8.fna.fbcdn.net/v/t1.6435-9/79268148_1306796722814998_6466852594533793792_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHif2VBKqQ9xAP5ZawOnU4dmnMyOlggeT2aczI6WCB5Pek256oA5uiqQ1scJKD3t6fvFexd5oxV5bTXv2MBDVFD&_nc_ohc=wln-qfGm85oQ7kNvwENswty&_nc_oc=AdnElD8lDTS-q1_Zb08GFTCBKHdQ_eQsWCaiL7Hwt3xivDAABu2vyixE12YhLoIzS14&_nc_zt=23&_nc_ht=scontent.fhan5-8.fna&_nc_gid=Ah0OM8PXzz-eVRaO49nljA&oh=00_AfMy86v6mJbJmQRGoW2fVr1SJDjlKWHihiClI3rmYDR9yg&oe=68749A62",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750438985/ee11e65b-bfd2-456d-a889-85b59f35c9da.png",
   },
    {
     ten: "ductu",
