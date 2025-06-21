@@ -1117,6 +1117,7 @@
             class="uk-grid-small uk-child-width-1-4 uk-margin uk-flex-center"
             uk-grid
             uk-countdown="date: 2025-06-30 17:00:00"
+            id="uk-countdown"
           >
             <div>
               <div
@@ -2030,6 +2031,11 @@
         document.getElementById("banner_month").innerHTML = "07";
         document.getElementById("banner_location_adress").innerHTML = "Phú Kinh, Hải Phong, Hải Lăng, Quảng Trị";
         document.getElementById("google_map_location").href = "https://maps.app.goo.gl/dJ1WrNk7KeNxRmNL9";
+        // Update countdown to new time for nhà Trai
+        var countdownDiv = document.getElementById("uk-countdown");
+        if (countdownDiv) {
+          countdownDiv.setAttribute("uk-countdown", "date: 2025-07-06 11:00:00");
+        }
       } else {
         document.getElementById("dresscode-bride").style.display = "block";
       }
@@ -2120,6 +2126,16 @@
     name: "vợ chồng anh Thuận + chị Vân Anh",
     src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436631/Friend/1620f3f2-1006-4731-bd61-e1553db27204.png",
   },
+    {
+    ten: "chidung",
+    name: "chị Phương Dung",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750489521/70b6beb4-d86c-41c6-84cd-ac0cb493a732.png",
+  },
+   {
+    ten: "anhloc",
+    name: "anh Đặng Xuân Lộc",
+    src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750489725/50c8ad6f-1b9e-4081-aa64-0e2060cb1176.png",
+  },
   {
     ten: "nguyendinhchau",
     name: "anh Nguyễn Đình Châu",
@@ -2132,7 +2148,7 @@
   },
   {
     ten: "lebahaidang",
-    name: "bạn Lê Bảo Hải Đăng",
+    name: "bạn Lê Bá Hải Đăng",
     src: "https://res.cloudinary.com/dh8l9y2c2/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1750436817/Friend/44be7e63-e589-4bc3-b7df-7961aa335130.png",
   },
   {
